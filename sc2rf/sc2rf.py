@@ -8,6 +8,7 @@ import json
 import argparse
 import os
 import requests
+import sys
 from tqdm import tqdm
 import urllib.parse
 
@@ -76,7 +77,7 @@ def main():
     # See https://stackoverflow.com/a/39675059/39946
     os.system('')
 
-    mappings = read_mappings('mapping.csv')
+    mappings = read_mappings(os.path.join(os.path.dirname(__file__), 'data', 'mapping.csv'))
     
     parser = argparse.ArgumentParser(
         description='Analyse SARS-CoV-2 sequences for potential, unknown recombinant variants.', 
@@ -136,8 +137,8 @@ def main():
 
     global reference
     vprint("Reading reference genome, lineage definitions...")
-    reference = read_fasta('reference.fasta', None)['MN908947 (Wuhan-Hu-1/2019)']
-    all_examples = read_examples('virus_properties.json')
+    reference = read_fasta(os.path.join(os.path.dirname(__file__), 'data', 'reference.fasta'), None)['MN908947 (Wuhan-Hu-1/2019)']
+    all_examples = read_examples(os.path.join(os.path.dirname(__file__), 'data', 'virus_properties.json'))
 
     used_examples = []
     if 'all' in args.clades:
