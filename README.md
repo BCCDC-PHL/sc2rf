@@ -12,7 +12,7 @@ Anyway, I'm happy that scientists are already seeing benefits from Sc2rf and usi
 Though I already have a lot of ideas and plans for Sc2rf (see at the bottom of this document), I'm very open for suggestions and feature requests. Please write an [issue](https://github.com/lenaschimmel/sarscov2recombinants/issues), start a [discussion](https://github.com/lenaschimmel/sarscov2recombinants/discussions) or get in touch via [mail](mailto:mail@lenaschimmel.de) or [twitter](https://twitter.com/LenaSchimmel)!
 
 ## Example output
-![Screenshot of the terminal output of Sc2rf](screenshot-no-deletions.png)
+![Screenshot of the terminal output of Sc2rf](docs/img/screenshot-no-deletions.png)
 
 ## Requirements and Installation
 You need at least Python 3.6 and you need to install the requirements first. You might use something like `python3 -m pip install -r requirements.txt` to do that. There's a `setup.py` which you should probably ignore, since it's work in progress and does not work as intented yet.
