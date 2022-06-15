@@ -14,9 +14,11 @@ setup(
         "tqdm>=4.63.1",
     ],
     python_requires=">=3.6",
+    package_data = {'sc2rf': ['data/mapping.csv', 'data/reference.fasta', 'data/virus_properties.json']},
+    include_package_data = True,
     entry_points={
         "console_scripts": [
-            "sc2rf = sc2rf:main",
+            "sc2rf = sc2rf.sc2rf:main",
         ],
     },
     classifiers=[
