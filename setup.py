@@ -7,7 +7,6 @@ setup(
     author="Lena Schimmel",
     url="https://github.com/lenaschimmel/sc2rf",
     version="0.0.2",
-    py_modules=["sc2rf"],
     install_requires=[
         "termcolor>=1.1.0",
         "requests>=2.27.1",
